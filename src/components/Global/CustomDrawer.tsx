@@ -12,13 +12,13 @@ export default function CustomDrawer() {
   };
 
   return (
-    <>
-      <button onClick={toggleDrawler}>
+    <div className="px-4">
+      <button onClick={toggleDrawler} className="btn btn-ghost">
         <MenuIcon />
       </button>
       <Drawer open={isDrawerOpen} onClose={toggleDrawler} direction="left">
         <div>bla bla bla</div>
       </Drawer>
-    </>
+    </div>
   );
 }

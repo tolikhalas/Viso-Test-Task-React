@@ -1,4 +1,5 @@
 import CustomDrawer from "./CustomDrawer";
+import SwitchLang from "./SwitchLang";
 
 export default function CustomHeader() {
   return (
@@ -15,7 +16,9 @@ export default function CustomHeader() {
           alt="Geo Quest Logo"
         />
       </nav>
-      <div className="navbar-end">Lang</div>
+      <div className="navbar-end">
+        <SwitchLang />
+      </div>
     </header>
   );
 }
