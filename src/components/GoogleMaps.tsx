@@ -6,28 +6,33 @@ export default function GoogleMaps() {
 
   useEffect(() => {
     const initGoogleMap = async () => {
+      // Google Maps loader
       const loader = new Loader({
         apiKey: import.meta.env.VITE_PUBLIC_GOOGLE_MAPS_API_KEY,
         version: "weekly",
       });
 
+      // Map Lib
       const { Map } = (await loader.importLibrary(
         "maps",
       )) as google.maps.MapsLibrary;
 
+      // Map init positino
       const position = {
         lat: 50.450001,
         lng: 30.523333,
       };
 
+      // Map options
       const mapOptions: google.maps.MapOptions = {
         center: position,
+        // City zoom
         zoom: 11,
         mapId: "GENERAL_POSITION",
       };
 
       // Setup map
-      const map = new Map(googleMapRef.current as HTMLDivElement, mapOptions);
+      new Map(googleMapRef.current as HTMLDivElement, mapOptions);
     };
 
     initGoogleMap();
