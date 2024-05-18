@@ -39,7 +39,7 @@ export default function GoogleMaps() {
   }, []);
 
   return (
-    <div className="h-full w-full" ref={googleMapRef}>
+    <div className="h-full min-h-[80vh] w-full md:min-h-0" ref={googleMapRef}>
       GoogleMaps
     </div>
   );

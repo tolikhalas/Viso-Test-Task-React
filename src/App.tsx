@@ -1,12 +1,18 @@
 import "./App.css";
+import CustomFooter from "./components/Global/CustomFooter";
+import CustomHeader from "./components/Global/CustomHeader";
 import GoogleMaps from "./components/GoogleMaps";
 
 function App() {
   return (
     <>
-      <div className="flex h-screen w-screen">
-        <GoogleMaps />
-      </div>
+      <main className="flex h-screen w-screen flex-col">
+        <CustomHeader />
+        <div className="flex-1">
+          <GoogleMaps />
+        </div>
+        <CustomFooter />
+      </main>
     </>
   );
 }
