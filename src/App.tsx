@@ -8,9 +8,9 @@ function App() {
     <>
       <main className="flex h-screen w-screen flex-col">
         <CustomHeader />
-        <div className="flex-1">
+        <section className="flex-1">
           <GoogleMaps />
-        </div>
+        </section>
         <CustomFooter />
       </main>
     </>
