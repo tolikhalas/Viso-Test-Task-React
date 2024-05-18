@@ -8,8 +8,12 @@ export default function CustomHeader() {
           <CustomDrawer />
         </div>
       </div>
-      <nav className="navbar-center">
-        <h2>Logo</h2>
+      <nav className="navbar-center ">
+        <img
+          src="./src/assets/geo-quest-logo.svg"
+          className="h-12 w-12 object-contain"
+          alt="Geo Quest Logo"
+        />
       </nav>
       <div className="navbar-end">Lang</div>
     </header>
