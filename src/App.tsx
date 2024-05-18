@@ -4,7 +4,7 @@ import GoogleMaps from "./components/GoogleMaps";
 function App() {
   return (
     <>
-      <div className="flex min-h-screen w-full">
+      <div className="flex h-screen w-screen">
         <GoogleMaps />
       </div>
     </>
